@@ -1,2 +1,12 @@
-# lucky-dice
-Lucky Dice game prototype and product design specification
+# 幸运骰子 · Lucky Dice
+
+基于双骰点数和的免费本地交互原型。每局有2–6、7、8–12三个区域，支持手动、自动局数、止盈止损、互斥校验、记录、走势与SHA-256摘要。
+
+- `index.html`：独立游戏，可直接本地打开。
+- `design.html`：三栏原型与完整设计文档，内嵌当前游戏。
+- `设计说明.md`：可编辑研发设计说明及美术动效清单。
+- `QA.md`：实际验证及限制。
+
+不连接真实资金、钱包或区块链。正式参数及实现差距见设计说明。`node build.mjs`重新生成组合页，`npm test`执行核心金额和结算检查。
+
+Vercel以静态文件部署，固定项目域名后续持续使用。不要将临时部署地址当固定入口。
